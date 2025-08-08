@@ -1,0 +1,24 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Read the csv file
+df = pd.read_csv('iris.csv')
+
+# Count the occurrences of each flower type
+flower_counts = df['variety'].value_counts()
+
+# Plot the occurrences as a bar graph
+flower_counts.plot(kind='bar')
+
+# Set labels and title
+plt.xlabel('Flower Types')
+plt.ylabel('Counts')
+plt.title('Counts of Flower Types in the Iris Dataset')
+
+# Save the plot as an image
+plt.savefig('output.png')
+
+# Display the plot
+plt.show()
+
+print("Graph has been successfully created and saved as 'output.png'.")
