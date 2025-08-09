@@ -1,0 +1,18 @@
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load the dataset
+data = pd.read_csv('data.csv')
+
+# Create the scatter plot with corrected column names
+plt.figure(figsize=(10, 6))
+scatter_plot = sns.scatterplot(data=data, x='sepal.length', y='sepal.width', hue='variety', palette='deep')
+
+# Adding labels and title
+scatter_plot.set(title='Sepal Length vs Sepal Width with Variety Hue', xlabel='Sepal Length (cm)', ylabel='Sepal Width (cm)')
+
+# Save the plot as an image file
+plt.savefig('output.png')
+
+print("Scatter plot created and saved as output.png")

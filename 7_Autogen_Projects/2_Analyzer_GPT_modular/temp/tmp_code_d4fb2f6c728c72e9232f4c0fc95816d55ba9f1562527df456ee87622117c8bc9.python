@@ -1,0 +1,7 @@
+import pandas as pd
+
+# Load the dataset
+data = pd.read_csv('data.csv')
+
+# Print the column names to inspect them
+print(data.columns)
