@@ -13,3 +13,4 @@ autogen-ext[docker]
 streamlit
 langchain-tavily
 langchain-google-vertexai
+pydantic
