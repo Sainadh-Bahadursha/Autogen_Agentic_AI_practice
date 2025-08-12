@@ -7,7 +7,7 @@ from autogen_ext.models.openai import OpenAIChatCompletionClient
 from agents.agents import planner_agent,local_agent,language_agent,travel_summary_agent
 
 
-model_client = OpenAIChatCompletionClient(model="gpt-4o")
+model_client = OpenAIChatCompletionClient(model="gpt-4o-mini")
 
 
 

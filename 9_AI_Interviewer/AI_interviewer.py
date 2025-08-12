@@ -11,7 +11,7 @@ import asyncio
 load_dotenv()
 
 async def team_Config(job_position = "Software Engineer"):
-    model_client = OpenAIChatCompletionClient(model="gpt-4o", api_key = os.getenv("OPENAI_API_KEY"))
+    model_client = OpenAIChatCompletionClient(model="gpt-4o-mini", api_key = os.getenv("OPENAI_API_KEY"))
     job_position = "Software Engineer"
 
     interviewer = AssistantAgent(

@@ -17,7 +17,7 @@ api_key = env_vars.get("OPENAI_API_KEY")
 if not api_key:
     raise ValueError("Please set the OPENAI_API_KEY environment variable.")
 
-model_client=OpenAIChatCompletionClient(model='gpt-4o',api_key=api_key)
+model_client=OpenAIChatCompletionClient(model='gpt-4o-mini',api_key=api_key)
 
 os.environ['SERPER_API_KEY']='03efe53bf8044f01c84e9c0d43a252fc74dc64a7'
 

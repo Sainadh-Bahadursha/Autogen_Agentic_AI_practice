@@ -14,3 +14,6 @@ streamlit
 langchain-tavily
 langchain-google-vertexai
 pydantic
+autogen-ext[mem0]
+autogen-ext[mem0-local]
+uv

@@ -12,7 +12,7 @@ if not api_key:
     raise ValueError("Please set the OPENAI_API_KEY environment variable.")
 
 
-model_client=OpenAIChatCompletionClient(model='gpt-4o',api_key=api_key)
+model_client=OpenAIChatCompletionClient(model='gpt-4o-mini',api_key=api_key)
 
 def reverse_string(text: str) -> str:
     '''
