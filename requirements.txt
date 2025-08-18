@@ -18,3 +18,6 @@ autogen-ext[mem0]
 autogen-ext[mem0-local]
 uv
 autogen-ext[mcp]
+flask
+pyngrok
+flask-cors
